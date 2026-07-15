@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oregano's Pizza | Pedidos online</title>
+  <meta name="description" content="Web premium de Oregano's Pizza con carrito, take out, delivery, upsells y pedidos por WhatsApp." />
+  <meta name="theme-color" content="#090909" />
+  <link rel="icon" href="assets/icon-192.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="notice-bar">Pedidos por WhatsApp · Delivery y pick up · Abierto todos los días desde las 4:00 PM</div>
+  <header class="site-header" id="top">
+    <div class="shell nav">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="Oregano's Pizza" />
+        <span class="brand__copy">
+          <strong>Oregano's Pizza</strong>
+          <small>Pizzería · Pizzas de autor</small>
+        </span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#menu">Menú</a>
+        <a href="#especiales">Especiales</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="cart-trigger" id="cartTrigger" type="button" aria-label="Abrir carrito">
+        <span class="cart-trigger__icon">🛒</span>
+        <span class="cart-trigger__label">Carrito</span>
+        <span class="cart-trigger__count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__backdrop"></div>
+      <div class="shell hero__content">
+        <div class="hero__copy reveal">
+          <span class="eyebrow"><span></span> El sabor que te hace volver</span>
+          <h1>Pizzas de autor, postres irresistibles y una experiencia de pedido súper fácil.</h1>
+          <p>Diseñamos una web premium para Oregano's Pizza con carrito inteligente, delivery o take out, upsells de bebidas y para compartir, y pedido estructurado directo a WhatsApp.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#menu">Ver menú completo</a>
+            <a class="btn btn--secondary" href="#galeria">Ver imágenes</a>
+          </div>
+          <div class="stats__grid">
+            <article class="stat"><strong>10.3 mil</strong><span>seguidores</span></article>
+            <article class="stat"><strong>4:00 PM</strong><span>apertura diaria</span></article>
+            <article class="stat"><strong>8+</strong><span>categorías</span></article>
+          </div>
+        </div>
+        <aside class="hero__panel reveal">
+          <div class="hero__panel-head">
+            <div>
+              <span class="eyebrow eyebrow--dark"><span></span> Pedido express</span>
+              <h2>Delivery o retiro en local.</h2>
+            </div>
+            <img src="assets/profile.jpg" alt="Perfil de Instagram de Oregano's Pizza" />
+          </div>
+          <div class="panel-highlights">
+            <article>
+              <strong>📍 Ubicación</strong>
+              <p>Av España · Hotel Turpial</p>
+            </article>
+            <article>
+              <strong>📲 WhatsApp</strong>
+              <p>0414-7559744</p>
+            </article>
+            <article>
+              <strong>⭐ Línea gráfica</strong>
+              <p>Negro, gris concreto y amarillo vibrante.</p>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="categories" id="especiales">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow eyebrow--dark"><span></span> Destacados para vender más</span>
+            <h2>Imágenes profesionales para elevar la marca.</h2>
+          </div>
+          <p>Generamos fotos premium siguiendo la estética del restaurante para usar en el hero, promociones y secciones del menú.</p>
+        </div>
+        <div class="showcase-grid">
+          <article class="showcase-card reveal">
+            <img src="assets/hero-classic.png" alt="Pizza clásica de Oregano's Pizza" loading="lazy" />
+            <div class="showcase-card__body"><span>Firma</span><h3>Pizza clásica estrella</h3><p>Perfecta para abrir el apetito y destacar las pizzas más vendidas.</p></div>
+          </article>
+          <article class="showcase-card reveal">
+            <img src="assets/hero-premium.png" alt="Pizza premium de prosciutto y bocconcini" loading="lazy" />
+            <div class="showcase-card__body"><span>Premium</span><h3>Prosciutto & pesto</h3><p>Ideal para la sección gourmet y pizzas de autor.</p></div>
+          </article>
+          <article class="showcase-card reveal">
+            <img src="assets/hero-dessert.png" alt="Pizza dulce con fresa y chocolate" loading="lazy" />
+            <div class="showcase-card__body"><span>Dulces</span><h3>Postres que antojan</h3><p>Una imagen pensada para vender Nutella, bocadillo y opciones especiales.</p></div>
+          </article>
+          <article class="showcase-card reveal">
+            <img src="assets/hero-sides.png" alt="Picada con tequeños, tenders y papas" loading="lazy" />
+            <div class="showcase-card__body"><span>Upsell</span><h3>Para compartir</h3><p>Perfecto para reforzar adicionales y combos desde el carrito.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="upsell-feature">
+      <div class="shell upsell-feature__grid">
+        <div class="upsell-feature__copy reveal">
+          <span class="eyebrow eyebrow--dark"><span></span> Carrito pensado para convertir</span>
+          <h2>Upsells automáticos en bebidas, postres y para compartir.</h2>
+          <p>Cuando el cliente agrega pizzas, la web recomienda papas, tequeños, tenders, jugos o cervezas para subir el ticket promedio sin complicar la experiencia.</p>
+          <ul class="feature-list">
+            <li>✅ Pedido ordenado a WhatsApp</li>
+            <li>✅ Delivery y take out</li>
+            <li>✅ Recomendaciones inteligentes</li>
+            <li>✅ Súper amigable en mobile</li>
+          </ul>
+        </div>
+        <div class="upsell-feature__visual reveal">
+          <div class="upsell-feature__cards">
+            <article><strong>Si agrega pizza</strong><span>Sugiere papas + bebidas</span></article>
+            <article><strong>Si agrega premium</strong><span>Sugiere postre dulce</span></article>
+            <article><strong>Si arma picada</strong><span>Sugiere refrescos o cervezas</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow eyebrow--dark"><span></span> Menú completo</span>
+            <h2>Todos los productos organizados por categoría.</h2>
+          </div>
+          <p>Selecciona una categoría, elige el tamaño y agrega al carrito. El sistema ordena todo para enviarlo limpio a WhatsApp.</p>
+        </div>
+        <div class="filter-strip reveal" id="categoryFilters"></div>
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section class="menu-gallery" id="galeria">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow eyebrow--dark"><span></span> Menú original de referencia</span>
+            <h2>La carta visual del restaurante integrada a la web.</h2>
+          </div>
+          <p>Además de las imágenes nuevas, dejamos la galería con los artes originales del menú para mantener toda la línea gráfica del negocio.</p>
+        </div>
+        <div class="menu-gallery__grid">
+          <figure class="reveal"><img src="assets/menu-clasicas.jpg" alt="Menú de pizzas clásicas, mixtas y vegetarianas" loading="lazy" /><figcaption>Clásicas, mixtas y vegetarianas</figcaption></figure>
+          <figure class="reveal"><img src="assets/menu-premium.jpg" alt="Menú premium de Oregano's Pizza" loading="lazy" /><figcaption>Premium y para compartir</figcaption></figure>
+          <figure class="reveal"><img src="assets/menu-especiales.jpg" alt="Menú especiales y dulces" loading="lazy" /><figcaption>Especiales y dulces</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-block" id="contacto">
+      <div class="shell contact-block__card reveal">
+        <div>
+          <span class="eyebrow eyebrow--dark"><span></span> Contacto</span>
+          <h2>Listo para vender desde el primer clic.</h2>
+          <p>La orden se envía ordenada al WhatsApp del restaurante y el cliente puede escoger si retira en local o prefiere delivery.</p>
+        </div>
+        <div class="contact-list">
+          <article><strong>WhatsApp</strong><span>0414-7559744</span></article>
+          <article><strong>Instagram</strong><span>@oreganospizza_sc</span></article>
+          <article><strong>Ubicación</strong><span>Av España · Hotel Turpial</span></article>
+          <article><strong>Horario</strong><span>Todos los días desde las 4:00 PM</span></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer__grid">
+      <a class="brand brand--footer" href="#top"><img src="assets/logo.png" alt="" /><span class="brand__copy"><strong>Oregano's Pizza</strong><small>Pizzería · Pizzas de autor</small></span></a>
+      <div class="footer__copy">
+        <p>Web premium con carrito, upsells y pedidos por WhatsApp.</p>
+        <small>Diseño mobile-first, elegante y funcional.</small>
+      </div>
+      <div class="footer__links">
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="https://www.instagram.com/oreganospizza_sc/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cart-bar" id="mobileCartBar" hidden>
+    <button type="button" id="mobileCartButton">
+      <span>🛒 Ver carrito</span>
+      <strong id="mobileCartTotal">0</strong>
+    </button>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer__overlay" data-close-cart></div>
+    <div class="cart-drawer__panel">
+      <header class="cart-drawer__header">
+        <div>
+          <span class="eyebrow eyebrow--dark"><span></span> Tu pedido</span>
+          <h3>Carrito</h3>
+        </div>
+        <button type="button" class="icon-button" data-close-cart aria-label="Cerrar carrito">✕</button>
+      </header>
+      <div class="cart-drawer__body">
+        <div id="cartItems" class="cart-items"></div>
+        <div id="upsellSuggestions" class="upsell-box"></div>
+      </div>
+      <footer class="cart-drawer__footer">
+        <div class="cart-summary">
+          <div><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+          <small>Los ítems marcados como “consultar” se confirman por WhatsApp.</small>
+        </div>
+        <button type="button" class="btn btn--primary btn--full" id="checkoutButton">Continuar pedido</button>
+      </footer>
+    </div>
+  </aside>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__sheet product-modal">
+      <button type="button" class="icon-button product-modal__close" data-close-modal aria-label="Cerrar">✕</button>
+      <div class="product-modal__hero" id="productModalHero"></div>
+      <div class="product-modal__content">
+        <div>
+          <span class="eyebrow eyebrow--dark"><span></span> Personaliza</span>
+          <h3 id="productModalTitle"></h3>
+          <p id="productModalDescription"></p>
+        </div>
+        <div id="productOptions"></div>
+        <label class="field">
+          <span>Instrucciones para cocina</span>
+          <textarea id="productNote" rows="3" placeholder="Ej. sin cebolla, bien dorada, salsa aparte..."></textarea>
+        </label>
+        <div class="product-modal__footer">
+          <div>
+            <small>Total del ítem</small>
+            <strong id="productModalPrice">$0</strong>
+          </div>
+          <button type="button" class="btn btn--primary" id="addToCartButton">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-checkout></div>
+    <div class="modal__sheet checkout-sheet">
+      <button type="button" class="icon-button checkout-sheet__close" data-close-checkout aria-label="Cerrar">✕</button>
+      <div class="checkout-sheet__head">
+        <span class="eyebrow eyebrow--dark"><span></span> Finalizar pedido</span>
+        <h3>Enviar a WhatsApp</h3>
+        <p>Completa los datos y la orden saldrá estructurada y lista para el restaurante.</p>
+      </div>
+      <form id="checkoutForm" class="checkout-form">
+        <div class="field-grid">
+          <label class="field"><span>Nombre</span><input type="text" name="name" required placeholder="Tu nombre" /></label>
+          <label class="field"><span>Teléfono</span><input type="tel" name="phone" required placeholder="Tu teléfono" /></label>
+        </div>
+        <div class="field-grid">
+          <label class="field"><span>Tipo de pedido</span>
+            <select name="orderType">
+              <option value="takeout">Retiro en local</option>
+              <option value="delivery">Delivery</option>
+            </select>
+          </label>
+          <label class="field"><span>Método de pago</span>
+            <select name="payment">
+              <option value="Pago móvil / transferencia">Pago móvil / transferencia</option>
+              <option value="Efectivo">Efectivo</option>
+              <option value="Tarjeta">Tarjeta</option>
+            </select>
+          </label>
+        </div>
+        <label class="field field--full" data-address-field hidden><span>Dirección de delivery</span><input type="text" name="address" placeholder="Dirección completa" /></label>
+        <label class="field field--full"><span>Notas del pedido</span><textarea name="notes" rows="4" placeholder="Indicaciones, referencia, cambio, etc."></textarea></label>
+        <div class="checkout-review" id="checkoutReview"></div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar pedido por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
